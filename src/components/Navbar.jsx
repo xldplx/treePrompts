@@ -20,7 +20,7 @@ export default function Navbar() {
                 <nav className="border shadow-md px-[2rem] py-[1rem] rounded-lg bg-white">
                     <ul className="flex gap-[2rem] text-slate-600">
                         <li>
-                            <a href="">prompts</a>
+                            <a href="/prompts">prompts</a>
                         </li>
                         <li>
                             <a href="">about</a>
