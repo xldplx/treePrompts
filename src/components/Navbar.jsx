@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
     const [isVisible, setIsVisible] = useState(false);
@@ -20,13 +21,16 @@ export default function Navbar() {
                 <nav className="border shadow-md px-[2rem] py-[1rem] rounded-lg bg-white">
                     <ul className="flex gap-[2rem] text-slate-600">
                         <li>
-                            <a href="/prompts">prompts</a>
+                            <Link to="/">home</Link>
                         </li>
                         <li>
-                            <a href="">about</a>
+                            <Link to="/prompts">prompts</Link>
                         </li>
                         <li>
-                            <a href="">contact</a>
+                            <Link to="/about">about</Link>
+                        </li>
+                        <li>
+                            <Link to="/contact">coontact</Link>
                         </li>
                     </ul>
                 </nav>
